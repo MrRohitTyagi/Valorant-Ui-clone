@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="util.css" />
+    <script src="script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- top header  -->
+
+    <nav class="navbar">
+      <div class="top-left-logo c">
+        <img src="./icons8-valorant-100.png" alt="" />
+      </div>
+
+      <div class="daily-tasks">
+        <span class="flex c">
+          <img src="./clock.png" class="small-img mx-1" alt="" /> 2 / 2</span
+        >
+        <span class="flex c">
+          <img src="./plus.png" class="small-img mx-1" alt="" /> 0 / 3</span
+        >
+      </div>
+
+      <div class="nav-item c">HOME</div>
+      <div class="nav-item c">BATTLEPASS</div>
+      <div class="nav-item c">AGENTS</div>
+
+      <div class="big-play-button text-2xl c" id="trapezoid">
+        <strong class="play-text"> PLAY </strong>
+      </div>
+
+      <div class="nav-item c">CAREER</div>
+      <div class="nav-item c">COLLECTION</div>
+      <div class="nav-item c">STORE</div>
+
+      <div class="valo-points c">
+        <span class="flex c"
+          ><img src="./icons8-valorant-100.png" class="small-img mx-1" alt="" />
+          123</span
+        >
+        <span class="flex c">
+          <img src="./r.png" class="small-img mx-1" alt="" /> 234</span
+        >
+      </div>
+
+      <div class="settings"><img src="./icons8-settings-64.png" alt="" /></div>
+    </nav>
+
+    <div class="lower-body">
+      <nav class="lower-nav">
+        <div class="lower-nav-item active c">UNRATED</div>
+        <div class="lower-nav-item c">COMPETITIVE</div>
+        <div class="lower-nav-item c">SPIKE RUSH</div>
+        <div class="lower-nav-item c">DEATHMATCH</div>
+        <div class="lower-nav-item c">ESCALATION</div>
+        <div class="lower-nav-item c">CUSTOM GAME</div>
+      </nav>
+    </div>
+
+    <div class="party-status c mt-8 flex">
+      <div>
+        <span class="mx-16 party-status-txt"> CLOSED PARTY </span>
+
+        <div class="toggle-border">
+          <input id="one" type="checkbox" onclick="changepartystatus()" />
+          <label for="one">
+            <div class="handle"></div>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- lower cards -->
+    <div class="card-container c">
+      <div class="val-card c1 c">+</div>
+      <div class="val-card c2 c">+</div>
+      <div class="val-card c3 c">+</div>
+      <div class="val-card c4 c">+</div>
+      <div class="val-card c5 c">+</div>
+    </div>
+
+    <div class="info c">
+      <p class="details capitalize" style="font-size: x-small">
+        unrated standard valorant gameplay. Swap between attacking and defending
+        sites. First 13 rounds wins
+      </p>
+    </div>
+
+    <div class="start-button-cont c">
+      <div class="practice-button c lb fdsfsd">PRACTICE</div>
+      <div class="start-button c lb fdsfsd">START</div>
+      <div class="leave-party-button c lb fdsfsd">LEAVE PARTY</div>
+    </div>
+
+    <div class="right-bar" onclick="handlerightbar()" onpointerleave="handleclose()">
+
+        <h3 class="c text-sm my-2">Online - 7</h3>
+      <div class="online-user">
+        <img src="./valorant.jpeg" height="2rem" alt="" />
+        <div class="player-detail">
+          <div class="player-name ml-2">ASHUFLEX</div>
+          <div class="player-game text-sm ml-2">
+            Competitive2-10
+          </div>
+        </div>
+      </div>
+      <div class="online-user">
+        <img src="./valorant.jpeg" height="2rem" alt="" />
+        <div class="player-detail">
+          <div class="player-name ml-2">klaus2</div>
+          <div class="player-game text-sm ml-2">
+            Unrated4-10
+          </div>
+        </div>
+      </div>
+      <div class="online-user">
+        <img src="./valorant.jpeg" height="2rem" alt="" />
+        <div class="player-detail">
+          <div class="player-name ml-2">Shubhamre2x</div>
+          <div class="player-game text-sm ml-2">
+            Competitive10-8
+          </div>
+        </div>
+      </div>
+      <div class="online-user">
+        <img src="./valorant.jpeg" height="2rem" alt="" />
+        <div class="player-detail">
+          <div class="player-name ml-2">Spctreeeee</div>
+          <div class="player-game text-sm ml-2">
+            Competitive5-23
+          </div>
+        </div>
+      </div>
+      <div class="online-user">
+        <img src="./valorant.jpeg" height="2rem" alt="" />
+        <div class="player-detail">
+          <div class="player-name ml-2">Father</div>
+          <div class="player-game text-sm ml-2">
+            Spike Rush2-4
+          </div>
+        </div>
+      </div>
+      <div class="online-user">
+        <img src="./valorant.jpeg" height="2rem" alt="" />
+        <div class="player-detail">
+          <div class="player-name ml-2">FakeJett</div>
+          <div class="player-game text-sm ml-2">
+            Deathmatch10-35
+          </div>
+        </div>
+      </div>
+      <div class="online-user">
+        <img src="./valorant.jpeg" height="2rem" alt="" />
+        <div class="player-detail">
+          <div class="player-name ml-2">Thomas</div>
+          <div class="player-game text-sm ml-2">
+            Competitive2-12
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,378 @@
+*::after,
+*::before,
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+    color: white;
+    user-select: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+
+}
+
+html {
+    transition: all 1s ease-out linear 1s;
+}
+
+body {
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/30d9f046-d3bf-4e55-b64e-1fabf94e27b9/ddzdmtl-780f45d4-013c-4139-b908-a1a399bfd4cd.jpg/v1/fill/w_1024,h_576,q_75,strp/creepy_omen__b_w__l_valorant_wallpaper_by_kok12383_ddzdmtl-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvMzBkOWYwNDYtZDNiZi00ZTU1LWI2NGUtMWZhYmY5NGUyN2I5XC9kZHpkbXRsLTc4MGY0NWQ0LTAxM2MtNDEzOS1iOTA4LWExYTM5OWJmZDRjZC5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.rQI7libz2PBN5OxDpVXEHTGvRk_oVj8fPukjMD8m5-g);
+    background-size: 100%;
+    color: whitesmoke;
+}
+
+.navbar {
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 2px solid;
+    padding: 0.5em 1em;
+    padding: 0.3rem 8rem;
+}
+
+.big-play-button {
+    position: relative;
+    color: black;
+    background-color: transparent;
+    width: 12em;
+    height: 2em;
+    position: relative;
+    border-top: 45px solid rgb(231, 221, 221);
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+}
+
+.play-text {
+    position: absolute;
+    top: -40px;
+    color: black;
+}
+
+.c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.daily-tasks,
+.valo-points {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-left-logo {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.top-left-logo>img {
+    height: 3em;
+    filter: contrast(0%);
+    border: 4px double white;
+    padding: 3px;
+
+}
+
+.settings {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    filter: contrast(0%);
+
+}
+
+.settings>img {
+    height: 2.5rem;
+    border: 2px solid white;
+    padding: 3px;
+    border-radius: 100%;
+}
+
+.nav-item {
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 80%);
+}
+
+.nav-item:hover {
+    color: rgba(255, 255, 255, 100%);
+}
+
+
+#trapezoids {
+    border-bottom: 100px solid red;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 100px;
+    background-color: transparent;
+}
+
+.small-img {
+    height: 1rem;
+    filter: contrast(0%);
+}
+
+/* lower  */
+
+.lower-body {
+    display: flex;
+    justify-content: center;
+}
+
+.lower-nav {
+
+    margin-top: 1rem;
+    display: flex;
+    border-bottom: 2px solid;
+    font-size: small;
+}
+
+.lower-nav-item {
+    color: rgba(255, 255, 255, 80%);
+
+    border: 3px solid transparent;
+    width: max-content;
+    padding: 0.2rem 1rem;
+    position: relative;
+
+}
+
+.active {
+    /* border-bottom: 3px solid gold; */
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 20%);
+    position: relative;
+    color: white;
+}
+
+.lower-nav-item:hover {
+    color: rgba(255, 255, 255, 100%);
+
+
+    /* border-bottom: 3px solid gold; */
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 20%);
+
+}
+
+@keyframes bordergain {
+
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 110%;
+    }
+}
+
+
+.active::before {
+    content: "۞";
+
+
+
+}
+
+.active::after {
+    content: "";
+    position: absolute;
+    width: 110%;
+    border-radius: 10px;
+    border-bottom: 5px solid gold;
+    margin-top: 4px;
+    animation: bordergain 300ms ease-in-out forwards;
+    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 90%;
+
+
+}
+
+
+.lower-nav-item::before {
+    content: "❖	";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 70%;
+
+
+}
+
+.party-status>div {
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 20%);
+    padding: 0.8rem 2rem;
+    display: flex;
+    scale: 0.8;
+}
+
+.toggle-border {
+    scale: 0.8;
+}
+
+.card-container {
+    margin-top: 2rem;
+}
+
+.val-card {
+    transition: all 1s ease-out linear 1s;
+    --height: 30rem;
+    width: 15rem;
+    background-color: rgba(255, 255, 255, 20%);
+    margin: 5px;
+    border: 2px solid rgba(255, 255, 255, 50%);
+    font-size: 2rem;
+}
+
+.val-card:hover {
+    background-color: rgba(255, 255, 255, 30%);
+}
+
+.c1 {
+    height: calc(var(--height) + 1rem)
+}
+
+.c2 {
+    height: calc(var(--height) + 2rem)
+}
+
+.c3 {
+    height: calc(var(--height) + 3.5rem)
+}
+
+.c4 {
+    height: calc(var(--height) + 2rem)
+}
+
+.c5 {
+    height: calc(var(--height) + 1rem)
+}
+
+.info {
+    font-size: small;
+}
+
+.start-button-cont {
+    margin-top: 2rem;
+}
+
+.lb {
+    position: relative;
+    width: 10rem;
+    border: 2px solid rgba(255, 255, 255, 50%);
+    ;
+    background-color: rgba(255, 255, 255, 20%);
+}
+
+.lb:hover {
+    width: 10rem;
+
+}
+
+.start-button {
+    height: 3rem;
+    margin: 0 2rem;
+    background-color: rgba(0, 255, 255, 70%);
+    font-weight: bold;
+    scale: 1.1;
+    color: rgba(255, 255, 255, 200%);
+}
+
+.practice-button {
+    padding: 3px;
+}
+
+.leave-party-button {
+    padding: 3px;
+}
+
+.practice-button::after {
+    content: "";
+    position: absolute;
+    width: 2.1rem;
+    left: 100%;
+    top: 40%;
+    border: 1px solid white;
+}
+
+.leave-party-button::after {
+    content: "";
+    position: absolute;
+    width: 2.1rem;
+    right: 100%;
+    top: 40%;
+    border: 1px solid white;
+}
+
+/* right bar  */
+
+.right-bar {
+    padding: 2px;
+    position: absolute;
+    width: 2.5rem;
+    width: 15rem;
+    right: 0;
+    top: 3.7rem;
+    background-color: rgb(90, 87, 87);
+    height: 100vmin;
+    transition: transform 300ms 100ms;
+    transform: translateX(190px);
+}
+
+.slide {
+    transform: translateX(0);
+
+}
+
+
+
+.online-user>img {
+    height: 100%;
+
+}
+
+.online-user {
+    margin-top: 3px;
+    display: flex;
+    height: 3.2rem;
+    background-color: rgb(109, 106, 106);
+    border-bottom: 3px solid rgb(56, 53, 53);
+
+
+}
+
+.player-detail :nth-child(2) {
+    color: rgb(6, 40, 152);
+}
+
+.online-user:hover {
+    background-color: rgba(161, 161, 161, 0.527);
+}
+
+.fdsfsd:hover{
+    animation: incborder 1s linear 1;
+
+}
+@keyframes incborder {
+    0%{
+        border: 1px solid gold;
+        
+    }
+    50%{
+        border: 3px solid gold;
+        
+    }
+    100%{
+        border: 4px solid gold;
+
+    }
+}
